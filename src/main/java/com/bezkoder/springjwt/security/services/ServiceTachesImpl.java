@@ -3,6 +3,8 @@ package com.bezkoder.springjwt.security.services;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.transaction.Transactional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -14,6 +16,7 @@ import com.bezkoder.springjwt.repository.TachesRepository;
 import com.bezkoder.springjwt.repository.UserStoryRepository;
 
 @Service
+@Transactional
 public class ServiceTachesImpl implements ServiceTaches {
 	@Autowired
 	private TachesRepository tacheRepository ;
