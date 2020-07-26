@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
+import javax.transaction.Transactional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -15,6 +17,7 @@ import com.bezkoder.springjwt.repository.TachesRepository;
 import com.bezkoder.springjwt.repository.UserStoryRepository;
 
 @Service
+@Transactional
 public class ServiceSprintImpl implements ServiceSprint {
     
 	@Autowired

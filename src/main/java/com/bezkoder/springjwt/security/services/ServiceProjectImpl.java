@@ -4,6 +4,8 @@ import java.util.List;
 import java.util.Optional;
 import java.util.Set;
 
+import javax.transaction.Transactional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -13,6 +15,7 @@ import com.bezkoder.springjwt.repository.ProjectRpository;
 import com.bezkoder.springjwt.repository.UserRepository;
 
 @Service ("projectService")
+@Transactional
 public class ServiceProjectImpl implements ServiceProject {
 
 	@Autowired 
