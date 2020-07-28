@@ -68,10 +68,5 @@ public class SprintController {
 		return new ResponseEntity<>(true,HttpStatus.OK);
 	}
 	
-	@GetMapping(value="/addTaskToSprint/{id}/{idTask}")
-	public boolean addTaskToSprint(@PathVariable int id, @PathVariable int idTask){
-		sprintService.addTaskToSprint(id, idTask);
-		return true;
-	}
-
+	
 }

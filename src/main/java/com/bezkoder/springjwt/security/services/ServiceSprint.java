@@ -13,4 +13,5 @@ public interface ServiceSprint {
 	public void deleteSprint(int id);
 	public void addTaskToSprint(int id, int idTask);
 	public List<Sprint> getSprintsByProjetId(Long projectId);
+	
 }
