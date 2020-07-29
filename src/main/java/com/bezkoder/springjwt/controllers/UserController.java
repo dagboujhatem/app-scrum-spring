@@ -22,7 +22,7 @@ import com.bezkoder.springjwt.models.User;
 import com.bezkoder.springjwt.security.jwt.FileStorageService;
 import com.bezkoder.springjwt.security.services.IserviceUser;
 
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "http://localhost:4200")
 @RestController
 @RequestMapping("/user")
 public class UserController {

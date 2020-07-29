@@ -15,7 +15,7 @@ import com.bezkoder.springjwt.models.Taches;
 import com.bezkoder.springjwt.security.services.ServiceTaches;
 
 
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "http://localhost:4200")
 @RequestMapping("/taches")
 @RestController
 public class TachesController {

@@ -17,7 +17,7 @@ import com.bezkoder.springjwt.models.Sprint;
 import com.bezkoder.springjwt.security.services.ServiceProject;
 import com.bezkoder.springjwt.security.services.ServiceSprint;
 
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "http://localhost:4200")
 @RequestMapping("/sprints")
 @RestController
 
